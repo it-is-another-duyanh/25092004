@@ -1,0 +1,32 @@
+Min cười
+đại gia đình
+hình 2 đứa - film1.jpg
+album nhạc
+nói đi anh nghe nè
+hoa tặng em
+show off về em
+hình trăng khuyết
+
+  <h1>💌 Happy Birthday to my bbi, bé Min 💌</h1>
+  <p>Trước khi bấm nút “Bắt đầu” thì anh muốn nói với em rằng là cảm ơn em đã  luôn kiên nhẫn và ở lại trong khoảng thời gian qua cùng anh, hành trình trước mắt vẫn sẽ luôn tiếp tục và hy vọng tuổi 21 của em luôn sẵn sàng và cũng giống như khi bấm nút “Bắt đầu”, anh sẽ đồng hành cùng em và mong em sẵn sàng đi cùng… thôi thì mình cùng bấm nút “Bắt đầu” nhé, anh chúc bé Min… </p>
+
+  <div><h2>Tuy anh và em đều cùng bắt đầu sớm trên con đường xây dựng sự nghiệp nhưng còn rất nhiều điều em sẽ được học hỏi, bản thân sẽ được trau dồi thêm, đồng thời khó khăn sẽ tới, bất mãn sẽ xảy ra, anh không hứa anh sẽ là hậu phương vững chắc nhưng trên con đường tụi mình đi, anh sẽ là bàn đạp để cùng em phát triển, đừng ngại chia sẻ cùng anh nhé. Anh vẫn luôn ở đây lắng nghe em. </h2></div>
+
+  <div><h2>🌸 Tuổi mới nhưng anh hy vọng em sẽ luôn giữ mãi nụ cười hạnh phúc trên môi em, vì em cười lên rất đẹp và anh thích được nhìn thấy em tươi cười. Tích cực lên nhé bbi, suy nghĩ tích cực thì mọi thứ xung quanh đều sẽ rất đẹp (nhưng em đẹp hơn hẹ hẹ), nếu không thì anh sẽ làm em bật cười liền đó!!! </h2></div>
+
+  <div><h2>💖 Cảm ơn gia đình đã nuôi lớn bé Min trong thời gian qua, cảm ơn chú Trung, cô Vân và anh hai của bé Min đã luôn là điểm tựa để bé Min nhỏ nhắn luôn được phát triển bản thân, và còn hơn thế nữa, từng ngày qua ngày, mong em luôn được đối xử tốt, nhận được trân trọng cả tôn trọng từ mọi người, được sống hạnh phúc trọn vẹn trong tim và luôn mang theo niềm tin trong lý trí của mình. </h2></div>
+
+  <div><h2>Tuy anh và em đều cùng bắt đầu sớm trên con đường xây dựng sự nghiệp nhưng còn rất nhiều điều em sẽ được học hỏi, bản thân sẽ được trau dồi thêm, đồng thời khó khăn sẽ tới, bất mãn sẽ xảy ra, anh không hứa anh sẽ là hậu phương vững chắc nhưng trên con đường tụi mình đi, anh sẽ là bàn đạp để cùng em phát triển, đừng ngại chia sẻ cùng anh nhé. Anh vẫn luôn ở đây lắng nghe em. </h2></div>
+
+  <div><h2>Last but not least, đây là lời từ trong lòng anh, anh đem cất vào từng bài nhạc, từng lyrics, nghe hơi sến xúa nhưng anh cảm ơn em vì những điều mà em dành cho anh, anh trân trọng điều này, và dần anh không chỉ chậm rãi hiểu về em mà cũng hiểu được thêm về cả bản thân. Thế nên, anh dành cho em từ sự tôn trọng đến trân trọng, và điều cuối cùng anh muốn dành cho em, là yêu em. </h2></div>
+
+  <h2>💝 Anh luôn xem em là đặc biệt, nên là quà cũng có chút đặc biệt hẹ hẹ hẹ (Bấm dô mí hộp quà để xem thử quà là gì nhenn bbi) </h2>
+  <div class="gift-container">
+    <div class="gift" onclick="showPopup('💌 Anh vẫn sẽ luôn ở đây với em, đừng ngại chia sẻ anh nghe nhé.' , 'https://source.unsplash.com/300x300/?love')">🎀</div>
+    <div class="gift" onclick="showPopup('🌼 Bông hoa của anh luôn đẹp, anh sẽ giữ gìn và stay hydrated nhé!' , 'https://source.unsplash.com/300x300/?happy')">🎀</div>
+    <div class="gift" onclick="showPopup('💫 Anh sẽ cho mọi người biết rằng em là điều tuyệt vời nhất mà anh từng có, đừng quên điều đó nhé!', 'https://source.unsplash.com/300x300/?stars')">🎀</div>
+  </div>
+
+
+  <p>Ngày mặt trăng gần tròn (Waxing Gibbous) – là một trong những dịp sự chuẩn bị, ánh sáng nhỏ sẽ lan toả đến từ từ, dần sẽ toả sáng khắp nơi. Giống như nghị lực mà em đang có, chứng minh rằng em vẫn luôn là chính em, chỉ cần có sự chuẩn bị, em sẽ luôn thành công trong mọi việc. </p>
+  <p>Happy Birthday to you, luv u my bbi <3</p>
