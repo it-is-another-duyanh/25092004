@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Min’s Birthday Gift</title>
+<style>
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive;
+  overflow: hidden;
+}
+.page {
+  display: none;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0; left: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: opacity 0.6s ease;
+}
+.active {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  padding: 10px 20px;
+  background: #ff4d8a;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.img-box img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.gift-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gift {
+  width: 150px;
+  height: 150px;
+  background: #ffb6c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.gift.open {
+  background: white;
+  font-size: 16px;
+  flex-direction: column;
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+  <source src="https://files.catbox.moe/7hjw0g.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Page 1 -->
+<div class="page active" style="background: linear-gradient(135deg, #fce1ec, #e1f0fc);">
+  <h1>💌 Happy Birthday to my bbi, bé Min 💌</h1>
+  <p>Trước khi bấm nút “Bắt đầu” thì anh muốn nói với em rằng là cảm ơn em đã  luôn kiên nhẫn và ở lại trong khoảng thời gian qua cùng anh, hành trình trước mắt vẫn sẽ luôn tiếp tục và hy vọng tuổi 21 của em luôn sẵn sàng và cũng giống như khi bấm nút “Bắt đầu”, anh sẽ đồng hành cùng em và mong em sẵn sàng đi cùng… thôi thì mình cùng bấm nút “Bắt đầu” nhé, anh chúc bé Min… </p>
+  <button class="btn" onclick="nextPage(true)">Bắt đầu</button>
+</div>
+<!-- Page 2 -->
+<div class="page" style="background: linear-gradient(135deg, #e1f0fc, #d4f5f5); flex-direction: row; gap: 30px; position: relative;">
+  <div class="img-box"><img src="https://source.unsplash.com/300x300/?flower" alt=""></div>
+  <div><h2>🌸 Tuổi mới nhưng anh hy vọng em sẽ luôn giữ mãi nụ cười hạnh phúc trên môi em, vì em cười lên rất đẹp và anh thích được nhìn thấy em tươi cười. Tích cực lên nhé bbi, suy nghĩ tích cực thì mọi thứ xung quanh đều sẽ rất đẹp (nhưng em đẹp hơn hẹ hẹ), nếu không thì anh sẽ làm em bật cười liền đó!!! </h2></div>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+  <button class="btn bottom-right" onclick="nextPage()">Tiếp</button>
+</div>
+<!-- Page 3 -->
+<div class="page" style="background: linear-gradient(135deg, #d4f5f5, #ffe9d6); flex-direction: column; gap: 30px; position: relative;">
+  <div><h2>💖 Cảm ơn gia đình đã nuôi lớn bé Min trong thời gian qua, cảm ơn chú Trung, cô Vân và anh hai của bé Min đã luôn là điểm tựa để bé Min nhỏ nhắn luôn được phát triển bản thân, và còn hơn thế nữa, từng ngày qua ngày, mong em luôn được đối xử tốt, nhận được trân trọng cả tôn trọng từ mọi người, được sống hạnh phúc trọn vẹn trong tim và luôn mang theo niềm tin trong lý trí của mình. </h2></div>
+  <div class="img-box"><img src="https://source.unsplash.com/300x300/?gift" alt=""></div>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+  <button class="btn bottom-right" onclick="nextPage()">Tiếp</button>
+</div>
+<!-- Page 4 -->
+<div class="page" style="background: linear-gradient(135deg, #ffe9d6, #e8d4f5); flex-direction: row; gap: 30px; position: relative;">
+  <div><h2>Tuy anh và em đều cùng bắt đầu sớm trên con đường xây dựng sự nghiệp nhưng còn rất nhiều điều em sẽ được học hỏi, bản thân sẽ được trau dồi thêm, đồng thời khó khăn sẽ tới, bất mãn sẽ xảy ra, anh không hứa anh sẽ là hậu phương vững chắc nhưng trên con đường tụi mình đi, anh sẽ là bàn đạp để cùng em phát triển, đừng ngại chia sẻ cùng anh nhé. Anh vẫn luôn ở đây lắng nghe em. </h2></div>
+  <div class="img-box"><img src="images/film1.jpg" alt="images"></div>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+  <button class="btn bottom-right" onclick="nextPage()">Tiếp</button>
+</div>
+<!-- Page 5 -->
+<div class="page" style="background: linear-gradient(135deg, #e8d4f5, #fce1ec); flex-direction: column; gap: 20px; position: relative;">
+  <div class="img-box"><img src="https://source.unsplash.com/300x300/?heart" alt=""></div>
+  <div><h2>Last but not least, đây là lời từ trong lòng anh, anh đem cất vào từng bài nhạc, từng lyrics, nghe hơi sến xúa nhưng anh cảm ơn em vì những điều mà em dành cho anh, anh trân trọng điều này, và dần anh không chỉ chậm rãi hiểu về em mà cũng hiểu được thêm về cả bản thân. Thế nên, anh dành cho em từ sự tôn trọng đến trân trọng, và điều cuối cùng anh muốn dành cho em, là yêu em. </h2></div>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+  <button class="btn bottom-right" onclick="nextPage()">Xem quà</button>
+</div>
+<!-- Page 6 -->
+<div class="page" id="giftPage" style="background: linear-gradient(135deg, #fce1ec, #e1f0fc); position: relative;">
+  <h2>💝 Anh luôn xem em là đặc biệt, nên là quà cũng có chút đặc biệt hẹ hẹ hẹ (Bấm dô mí hộp quà để xem thử quà là gì nhenn bbi) </h2>
+  <div class="gift-container">
+    <div class="gift" onclick="showPopup('💌 Anh vẫn sẽ luôn ở đây với em, đừng ngại chia sẻ anh nghe nhé.' , 'https://source.unsplash.com/300x300/?love')">🎀</div>
+    <div class="gift" onclick="showPopup('🌼 Bông hoa của anh luôn đẹp, anh sẽ giữ gìn và stay hydrated nhé!' , 'https://source.unsplash.com/300x300/?happy')">🎀</div>
+    <div class="gift" onclick="showPopup('💫 Anh sẽ cho mọi người biết rằng em là điều tuyệt vời nhất mà anh từng có, đừng quên điều đó nhé!', 'https://source.unsplash.com/300x300/?stars')">🎀</div>
+  </div>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+  <button class="btn bottom-right" onclick="nextPage()">Tiếp</button>
+</div>
+<!-- Popup -->
+<div id="popup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); display:none; align-items:center; justify-content:center;">
+  <div style="background:white; padding:20px; border-radius:12px; max-width:400px; text-align:center; position:relative;">
+    <h3 id="popupMessage"></h3>
+    <img id="popupImg" src="" style="width:200px; height:200px; object-fit:cover; border-radius:10px; margin:15px 0;">
+    <br>
+    <button class="btn" onclick="closePopup()">Quay lại</button>
+  </div>
+</div>
+<script>
+function showPopup(message, imgUrl) {
+  document.getElementById('popupMessage').innerText = message;
+  document.getElementById('popupImg').src = imgUrl;
+  document.getElementById('popup').style.display = "flex";
+}
+function closePopup() {
+  document.getElementById('popup').style.display = "none";
+}
+</script>
+<!-- Page 7 -->
+<div class="page" style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; flex-direction: column; gap: 20px;">
+  <h2>Moon phrase of 25/09/2004 </h2>
+  <h2>Ngày trăng gần tròn (Waxing Gibbous) 🌕</h2>
+  <div class="img-box"><img src="https://source.unsplash.com/300x300/?moon" alt=""></div>
+  <p>Ngày mặt trăng gần tròn (Waxing Gibbous) – là một trong những dịp sự chuẩn bị, ánh sáng nhỏ sẽ lan toả đến từ từ, dần sẽ toả sáng khắp nơi. Giống như nghị lực mà em đang có, chứng minh rằng em vẫn luôn là chính em, chỉ cần có sự chuẩn bị, em sẽ luôn thành công trong mọi việc. </p>
+  <p>Happy Birthday to you, luv u my bbi <3</p>
+  <button class="btn bottom-left" onclick="prevPage()">Quay lại</button>
+</div>
+
+
+<script>
+let currentPage = 0;
+const pages = document.querySelectorAll('.page');
+
+function nextPage(startMusic = false) {
+  if (startMusic) document.getElementById('bgMusic').play();
+  pages[currentPage].classList.remove('active');
+  pages[currentPage].style.display = 'none';
+  currentPage++;
+  if (currentPage < pages.length) {
+    pages[currentPage].style.display = 'flex';
+    pages[currentPage].classList.add('active');
+  }
+}
+
+function prevPage() {
+  pages[currentPage].classList.remove('active');
+  pages[currentPage].style.display = 'none';
+  currentPage--;
+  if (currentPage >= 0) {
+    pages[currentPage].style.display = 'flex';
+    pages[currentPage].classList.add('active');
+  }
+}
+
+function openGift(el, message, imgUrl) {
+  el.classList.add('open');
+  el.innerHTML = `<div style="display:flex;align-items:center;gap:10px;">
+                    <div style="flex:1;">${message}</div>
+                    <img src="${imgUrl}" style="width:80px;height:80px;object-fit:cover;border-radius:8px;">
+                  </div>`;
+}
+</script>
+
+</body>
+</html>
+
+
+
